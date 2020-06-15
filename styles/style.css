@@ -41,3 +41,11 @@ ul {
     display:inline-flex;
     width: 40%;
 }
+.navbar-custom {
+    background-color: lightgrey;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.navbar-custom:hover {
+    background-color: darkgrey;
+}

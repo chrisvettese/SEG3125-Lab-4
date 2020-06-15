@@ -12,23 +12,33 @@
     <title>Chris's Bike Shop</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="dist/bootstrap-clockpicker.min.css">
+    <script type="text/javascript" src="dist/bootstrap-clockpicker.min.js"></script>
+    <script type="text/javascript">
+        $('.clockpicker').clockpicker();
+    </script>
+
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="text-center"><img class="img-style img-fluid" src="images/logo.png" alt="logo"></div>
-<h1 class="text-center">Chris's Bike Shop</h1>
-
-<p class="text-center">186 Vettese Street, Toronto, ON, A1A 2C2</p>
-<p class="text-center">We are Toronto's number one location for bike repairs and maintenance, offering high quality bike
-    services at an affordable price.</p>
 <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-md-center justify-content-start">
     <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
         <span class="navbar-toggler-icon"></span>
@@ -50,6 +60,13 @@
         </ul>
     </div>
 </nav>
+<h1 class="text-center">Chris's Bike Shop</h1>
+<p class="text-center">186 Vettese Street, Toronto, ON, A1A 2C2</p>
+<p class="text-center">
+    We are Toronto's number one location for bike repairs and maintenance, offering high quality bike
+    services at an affordable price.
+</p>
+<br>
 <div id="meet meet-style" class="text-center">
     <h2>Meet Our Experts</h2>
     <ul class="list-group list-group-horizontal-sm">
@@ -71,7 +88,7 @@
         </li>
     </ul>
 </div>
-
+<br>
 <div id="services" class="text-center">
     <h2 class="text-center">Services and Prices</h2>
     <ul>
@@ -82,9 +99,60 @@
         <li>$17.99 Gear Repair</li>
     </ul>
 </div>
+<br>
 <div id="book">
     <h2 class="text-center">Book An Appointment</h2>
+    <div class="text-center">
+        Select a service:
+        <br>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item">General Tune Up</a>
+                <a class="dropdown-item">Bike Inspection</a>
+                <a class="dropdown-item">Tire Replacement</a>
+                <a class="dropdown-item">Full Tune Up</a>
+                <a class="dropdown-item">Gear Repair</a>
+            </div>
+
+        </div>
+        <br>
+        Select a date:
+        <br>
+        <label for="datepicker"></label><input type="text" id="datepicker">
+        <br>
+        Select a time:
+        <br>
+        <div class="form-group">
+            <div class="input-group clockpicker data-placement=" center
+            " data-align="top" data-autoclose="true">
+            <input type="text" class="form-control" value="13:14">
+            <span class="input-group-addon">
+        <span class="glyphicon glyphicon-time"></span>
+    </span>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.clockpicker').clockpicker();
+    </script>
+    <br>
+    Enter your email address:
+    <br>
+    <div class="form-group">
+        <label for="emailInput"></label>
+        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+               placeholder="Email Address">
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary">Submit</button>
+    <br>
+    You will receive a confirmation email when your appointment has been scheduled.
 </div>
+</div>
+<br>
 <div id="contact">
     <h2 class="text-center">Contact Us</h2>
     <div class="text-center">
@@ -95,5 +163,7 @@
     <div class="text-center">Visit us in person at</div>
     <div class="font-italic text-center">186 Vettese Street, Toronto, ON, A1A 2C2</div>
 </div>
+<br><br>
+<p class="text-center">Website designed by Chris Vettese.</p>
 </body>
 </html>

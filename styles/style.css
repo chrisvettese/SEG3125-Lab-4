@@ -36,3 +36,8 @@ ul {
 .expert-li {
     width: 100%;
 }
+
+.form-group {
+    display:inline-flex;
+    width: 40%;
+}

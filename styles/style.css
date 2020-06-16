@@ -46,6 +46,21 @@ ul {
     margin-left: 2px;
     margin-right: 2px;
 }
+
+.bg-custom {
+    background-color: rgba(0, 0, 200, 0.06);
+}
+
 .navbar-custom:hover {
     background-color: darkgrey;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.headline {
+    background-image: linear-gradient(rgba(0, 0, 200, 0.06), white);
 }

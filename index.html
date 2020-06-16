@@ -20,21 +20,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#datepicker").datepicker();
-        });
-    </script>
-
-    <link rel="stylesheet" type="text/css" href="dist/bootstrap-clockpicker.min.css">
-    <script type="text/javascript" src="dist/bootstrap-clockpicker.min.js"></script>
-    <script type="text/javascript">
-        $('.clockpicker').clockpicker();
-    </script>
-
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -131,25 +116,12 @@
                 </div>
             </form>
         </div>
-        Select a date:
-        <br>
-        <label for="datepicker"></label>
-        <input type="text" id="datepicker">
-        <br><br>
-        Select a time:
-        <br>
-        <div class="form-group text-center">
-            <div class="input-group clockpicker" data-placement="bottom" data-align="top" data-autoclose="true">
-                <label for="time"></label>
-                <input type="text" class="form-control" value="12:00" id="time">
-                <span class="input-group-addon centre-time">
-                    <span class="glyphicon glyphicon-time centre-time"></span>
-                </span>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $('.clockpicker').clockpicker();
-        </script>
+        Select a date and time:
+        <form action="">
+            <label for="date-time"></label>
+            <input type="datetime-local" id="date-time" name="date-time">
+            <input type="submit">
+        </form>
         <br>
         Enter your email address:
         <br>

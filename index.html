@@ -134,35 +134,36 @@
         <br>
         Select a date:
         <br>
-        <label for="datepicker"></label><input type="text" id="datepicker">
+        <label for="datepicker"></label>
+        <input type="text" id="datepicker">
         <br>
         Select a time:
         <br>
-        <div class="form-group">
-            <div class="input-group clockpicker data-placement=" center
-            " data-align="top" data-autoclose="true">
-            <input type="text" class="form-control" value="12:00">
-            <span class="input-group-addon">
-        <span class="glyphicon glyphicon-time"></span>
-    </span>
+        <div class="form-group text-center">
+            <div class="input-group clockpicker" data-placement="bottom" data-align="top" data-autoclose="true">
+                <label for="time"></label>
+                <input type="text" class="form-control" value="12:00" id="time">
+                <span class="input-group-addon centre-time">
+                    <span class="glyphicon glyphicon-time centre-time"></span>
+                </span>
+            </div>
         </div>
+        <script type="text/javascript">
+            $('.clockpicker').clockpicker();
+        </script>
+        <br>
+        Enter your email address:
+        <br>
+        <div class="form-group">
+            <label for="emailInput"></label>
+            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                   placeholder="Email Address">
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary">Submit</button>
+        <br>
+        You will receive a confirmation email when your appointment has been scheduled.
     </div>
-    <script type="text/javascript">
-        $('.clockpicker').clockpicker();
-    </script>
-    <br>
-    Enter your email address:
-    <br>
-    <div class="form-group">
-        <label for="emailInput"></label>
-        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
-               placeholder="Email Address">
-    </div>
-    <br>
-    <button type="button" class="btn btn-primary">Submit</button>
-    <br>
-    You will receive a confirmation email when your appointment has been scheduled.
-</div>
 </div>
 <br>
 <div id="contact">

@@ -55,6 +55,11 @@ ul {
     background-color: darkgrey;
 }
 
+.centre-time {
+    padding-left: 200px;
+    margin-left: 200px;
+}
+
 hr {
     margin-top: 0;
     margin-bottom: 0;

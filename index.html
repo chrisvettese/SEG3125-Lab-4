@@ -118,20 +118,19 @@
         Select a service:
         <br>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Services
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item">General Tune Up</a>
-                <a class="dropdown-item">Bike Inspection</a>
-                <a class="dropdown-item">Tire Replacement</a>
-                <a class="dropdown-item">Full Tune Up</a>
-                <a class="dropdown-item">Gear Repair</a>
-            </div>
-
+            <form>
+                <div class="form-group">
+                    <label for="book-service"></label>
+                    <select class="form-control" id="book-service">
+                        <option>General Tune Up</option>
+                        <option>Bike Inspection</option>
+                        <option>Tire Replacement</option>
+                        <option>Full Tune Up</option>
+                        <option>Gear Repair</option>
+                    </select>
+                </div>
+            </form>
         </div>
-        <br>
         Select a date:
         <br>
         <label for="datepicker"></label>

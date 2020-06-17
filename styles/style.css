@@ -69,3 +69,8 @@ hr {
 .headline {
     background-image: linear-gradient(rgba(0, 0, 200, 0.06), white);
 }
+
+.bike-image {
+    width: 15%;
+    height: auto;
+}
